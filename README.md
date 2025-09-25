@@ -37,7 +37,12 @@ POSTGRES_NON_ROOT_PASSWORD=n8n_password
 EOL
 ```
 
-4. Executar o ambiente Docker:
+4. Compilar o custom node
+```bash
+npm run build
+```
+
+5. Executar o ambiente Docker:
 ```bash
 docker-compose up -d
 ```
@@ -45,10 +50,10 @@ docker-compose up -d
 # Para verificar se os serviços estão rodando:
 docker-compose ps
 ```
-5. Acessar o n8n:
+6. Acessar o n8n:
    * Abrir o navegador em: http://localhost:5678
    * Configure uma conta de usuário inicial
-6.  Para testar o custom node:
+7.  Para testar o custom node:
     * Criar um novo workflow
     * Adicionar um node "Manual Trigger"
     * Adicionar o node "Random"
